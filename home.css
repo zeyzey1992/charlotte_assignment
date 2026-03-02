@@ -16,7 +16,7 @@ footer{
 footer img{
     width: 120px;
 }
-.logo-img{
+header{
    justify-content: center;
    height: 10vh;
    display:flex;
@@ -24,3 +24,7 @@ footer img{
    padding: 10px 20px;
   
 }
+nav a:hover {
+      background: url("screenshots/rollover.png") center center;
+      background-size: cover;
+   }
