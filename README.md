@@ -7,4 +7,4 @@ home and details html pages created
 All images has been added on the file
 
 3) Stage 3 completed
-nav bar has been added on home page
+nav bar has been added on home  and details pages
