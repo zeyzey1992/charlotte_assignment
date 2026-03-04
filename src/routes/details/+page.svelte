@@ -1,7 +1,14 @@
-    
+
+   <script>
+        import Nav  from "$lib/components/Nav.svelte";
+   </script>
+   <svelte:head>
+        <title>Details- character page</title>
+   </svelte:head>
+
     <div class="section-reverse">
     <div class="character">
-    <div class="image_box">
+    <div class="image_box1">
         <img src="/images/charlotte01.jpg" alt="Queen Charlotte">
     </div>
      <div class="text">
@@ -120,5 +127,85 @@
         <img src="/images/george02.jpg" alt="george02">
     </div>
 
+<style>
+:global(body){
+    background-image: url('/images/pattern.svg');
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(198, 149, 45);
+    font-family:'Cormorant Garamond', serif;
+}
+:global(h1), :global(h2), :global(.title_box) {
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: white;
+}
+.character{
+    display: flex;
+    align-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin: 90px auto;
+    gap: 15px;
+}
 
+.character_gallery{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.character_gallery img{
+    width: 450px;
+    height: auto;
+}
+
+.section {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 120px auto;
+}
+.section.reverse{
+    flex-direction: row-reverse;
+}
+.text {
+    width: 40%;
+    border: 3px solid orange ;
+    color: white;
+    font-size: 1.9rem;
+}
+
+
+.image_box {
+    width: 50%;
+    position: relative;   
+}
+
+.image_box img {
+    width: 100%;
+    display: block;
+}
+
+
+.title_box {
+    position: absolute;
+    top: -70px;         
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 22px;
+    letter-spacing: 3px;
+    
+}
+
+.title_box img {
+    gap: 40px;
+    width: 70px; 
+    height: 20px;        
+}
+
+</style>
  
