@@ -1,27 +1,20 @@
 <script>
 import Nav from "$lib/components/Nav.svelte";
+import items from "$lib/data/merchandise.json";
 </script>
 
 <h1>Merchandise</h1>
 
 <section class="products">
-  <div class="product">
-    <img src="/images/QT.jpeg" alt="thisort">
-    <p>Queen Charlotte T-shirt</p>
-  </div>
 
+  {#each items as item}
   <div class="product">
-    <img src="/images/Qmug1.png" alt="mug">
-    <p>Queen Charlotte Mug</p>
+      <img src={item.image} alt={item.name}>
+      <p>{item.name}</p>
   </div>
+  {/each}
 
-  <div class="product">
-    <img src="/images/Qp.jpg" alt="poster">
-    <p>Queen Chaarlotte Poster</p>
-  </div>
 </section>
-
-
 
 <h2>Order form</h2>
 
