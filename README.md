@@ -1,42 +1,34 @@
-# sv
+1) Stage 1 completed
+i created Home and Details html
+No CSS, links, or images yet
+Focus basic HTML semantic structure for each page.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+2) Stage 2 completed 
+Uploaded all images required for Home and Details pages.
+Added <img> elements in both pages to display characters and backgrounds.
 
-## Creating a project
+3) Stage 3 completed 
+i added nav bar and links to both pages
 
-If you're seeing this, you've probably already done this step. Congrats!
+4) Stage 4 completed 
+created 3 css for Home page, Details page and Nav 
 
-```sh
-# create a new project
-npx sv create my-app
-```
+5) Stage 5 completed
+Converted HTML pages to SvelteKit pages:
+src/routes/+page.svelte (Home)
+src/routes/details/+page.svelte (Details)
 
-To recreate this project with the same configuration:
+Created reusable components:
+Nav.svelte – Navigation bar
+Footer.svelte – Page footer
 
-```sh
-# recreate this project
-npx sv@0.12.4 create --template minimal --types ts --add sveltekit-adapter="adapter:auto" --install npm ./
-```
+Added <Nav /> and <Footer /> in layout to be shared across pages
 
-## Developing
+6) Stage 6 completed
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+Created a third page: /merchandise/+page.svelte.
+Added link to merchandise page in nav bar.
+Styled page similar to Home and Details pages.
+Added images of merchandise items.
+Added order form at the bottom:
+Name, Email, Postal Address
