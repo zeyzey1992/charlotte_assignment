@@ -5,9 +5,9 @@
  <svelte:head>
     <title>QUEEN CHARLOTTE-Home page</title>
  </svelte:head>
- <hearder>
+ <header>
     <img src="/images/logotype.png" alt="logo">
-    </hearder>
+    </header>
   
 <main>
     <img src="/images/homeimage.jpg" alt="queen charlotte backround">
@@ -26,10 +26,14 @@ main img{
 :global(header){
    justify-content: center;
    align-items: center;
-   height: 10vh;
    display:flex;
-   width: 100%;
-   padding: 10px 20px;
+   padding: 20px;
+}
+header img{
+    width: 500px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 </style>
 
