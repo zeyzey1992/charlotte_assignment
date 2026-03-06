@@ -32,3 +32,7 @@ Styled page similar to Home and Details pages.
 Added images of merchandise items.
 Added order form at the bottom:
 Name, Email, Postal Address
+
+7) Stage 7 comopleted
+
+Populated merchandise page using JSON data instead of hard-coded content.
